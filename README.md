@@ -1,12 +1,14 @@
-# neftlabs_web_templete
+# Neftlabs Web Template
 
-This is the whole neftlabs website repo 
+This is the whole neftlabs.com repo that you can use as a template for your own web project. 
+
+**This is work in progress.**
 
 ## Getting Started
 
-You need to fork or clone this repo. This work in progress, feel free to contribute or comment on bugs,errors or new features.
+- First thing you need to do is fork or clone this repo (i.e git clone https://github.com/neftlabs/neftlabs_web_templete.git). 
 
-In the **lib** folder there are the **models,** **page** and the **utils** folders. Inside **model** folder is where all the classes live and their implementations or **components** are inside **pages/components.** Inside **utils** are the *constants* (where primary and backgrund colours valuesare), *global* and *screen helper* files.
-
+- Cloning the repo in a local folder will copy all the necessary folders and files. On the **lib** folder there are the **models,** **pages** and the **const** folders. Inside **model** folder is where all the classes live in and their implementations or **components** are inside **pages/components.** Inside **const** are the *constants* (where primary and background colours values are etc), *global* and *screen helper* files.
+Inside **components** there is also the *home* file. In this file is where all the magic happen, unlike the *main* file, (which is really where you would expect to find what is in the *home* file, please do not get confused), the *main* file contains the integration of both, the classes (that are in models) and their implementations (in the component folder). This magic happens thanks to the ListView() and SingleChildScrollView() Flutter classes that allow to pass instances of any of the models.  
 
 

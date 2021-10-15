@@ -4,9 +4,9 @@ import 'package:flutter_icons/flutter_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:neftlabs_web_templete/models/header_item.dart';
-import 'package:neftlabs_web_templete/utils/constants.dart';
-import 'package:neftlabs_web_templete/utils/globals.dart';
-import 'package:neftlabs_web_templete/utils/screen_helper.dart';
+import 'package:neftlabs_web_templete/const/constants.dart';
+import 'package:neftlabs_web_templete/const/globals.dart';
+import 'package:neftlabs_web_templete/const/screen_helper.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 List<HeaderItem> headerItems = [

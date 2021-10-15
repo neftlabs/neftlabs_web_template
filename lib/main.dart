@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:neftlabs_web_templete/pages/home.dart';
-import 'package:neftlabs_web_templete/utils/constants.dart';
+import 'package:neftlabs_web_templete/const/constants.dart';
 
 void main() {
   runApp(MyApp());

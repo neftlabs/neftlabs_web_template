@@ -12,8 +12,8 @@ import 'package:neftlabs_web_templete/pages/components/header.dart';
 // import 'package:web_portfolio/pages/home/components/sponsors.dart';
 // import 'package:web_portfolio/pages/home/components/testimonial_widget.dart';
 // import 'package:web_portfolio/pages/home/components/website_ad.dart';
-import 'package:neftlabs_web_templete/utils/constants.dart';
-import 'package:neftlabs_web_templete/utils/globals.dart';
+import 'package:neftlabs_web_templete/const/constants.dart';
+import 'package:neftlabs_web_templete/const/globals.dart';
 
 class Home extends StatelessWidget {
   @override
