@@ -3,7 +3,8 @@ import 'package:flutter/rendering.dart';
 // import 'package:web_portfolio/pages/home/components/carousel.dart';
 // import 'package:web_portfolio/pages/home/components/cv_section.dart';
 // import 'package:web_portfolio/pages/home/components/education_section.dart';
-// import 'package:web_portfolio/pages/home/components/footer.dart';
+import 'package:neftlabs_web_templete/models/footer_item.dart';
+import 'package:neftlabs_web_templete/pages/components/footer.dart';
 
 import 'package:neftlabs_web_templete/pages/components/header.dart';
 // import 'package:web_portfolio/pages/home/components/ios_app_ad.dart';
@@ -78,6 +79,7 @@ class Home extends StatelessWidget {
               Container(
                 child: Header(),
               ),
+              Footer(),
               // Carousel(),
               // SizedBox(
               //   height: 20.0,
