@@ -19,6 +19,6 @@ This command should generate  **build/web** folders.
 
 ```cd build/web```
 
-Once you there you can push your changes to your own repository.all that is inside **build/web** is what is used (if pushing changes to your repo make sure you **only** push what is inside **build/web** and not the whole project)  
+Once you are there you can push your changes to your own repository. All that is inside **build/web** is what is used (if you are pushing changes to your repo make sure you **only** push what is inside **build/web** and not the whole project)  
 
 

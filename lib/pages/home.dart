@@ -5,6 +5,7 @@ import 'package:flutter/rendering.dart';
 // import 'package:web_portfolio/pages/home/components/education_section.dart';
 import 'package:neftlabs_web_templete/models/footer_item.dart';
 import 'package:neftlabs_web_templete/pages/components/footer.dart';
+import 'package:neftlabs_web_templete/pages/components/carousel_controllers.dart';
 
 import 'package:neftlabs_web_templete/pages/components/header.dart';
 // import 'package:web_portfolio/pages/home/components/ios_app_ad.dart';
@@ -79,8 +80,8 @@ class Home extends StatelessWidget {
               Container(
                 child: Header(),
               ),
+              Carousel(),
               Footer(),
-              // Carousel(),
               // SizedBox(
               //   height: 20.0,
               // ),
