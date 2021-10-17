@@ -3,6 +3,7 @@ import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:neftlabs_web_templete/models/carousel_item.dart';
 import 'package:neftlabs_web_templete/const/constants.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 List<CarouselItemModel> carouselItems = List.generate(
   5,
@@ -90,7 +91,9 @@ List<CarouselItemModel> carouselItems = List.generate(
                 horizontal: 28.0,
               ),
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  _launchURL();
+                },
                 child: Text(
                   "Explore",
                   style: TextStyle(
@@ -113,3 +116,12 @@ List<CarouselItemModel> carouselItems = List.generate(
     ),
   ),
 );
+
+_launchURL() async {
+  const url = 'https://www.neftlabs.com/collections';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}

@@ -14,7 +14,11 @@ List<HeaderItem> headerItems = [
     title: "HOME",
     onTap: () {},
   ),
-  HeaderItem(title: "ABOUT", onTap: () {}),
+  // HeaderItem(
+  //   title: "ABOUT",
+  //   onTap: () {}
+  //   ),
+
   HeaderItem(
     title: "MARKETPLACE",
     onTap: _launchURL,

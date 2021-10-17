@@ -5,19 +5,18 @@ import 'package:responsive_framework/responsive_framework.dart';
 import 'package:neftlabs_web_templete/models/footer_item.dart';
 import 'package:neftlabs_web_templete/const/constants.dart';
 import 'package:neftlabs_web_templete/const/screen_helper.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 final List<FooterItem> footerItems = [
   FooterItem(
     iconPath: "assets/github.png",
     title: "GitHub",
-    text1: "",
-    text2: "",
   ),
   FooterItem(
     iconPath: "assets/twitter.png",
     title: "Twitter",
-    text1: "",
-    text2: "",
+    onTap: _launchURLTwitter,
+    isButton: true,
   ),
 ];
 
@@ -59,10 +58,10 @@ Widget _buildUi(double width, BuildContext context) {
                               : constraints.maxWidth / 4.0 - 20.0,
                           child: Container(
                             child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Image.asset(
                                       footerItem.iconPath!,
@@ -89,14 +88,12 @@ Widget _buildUi(double width, BuildContext context) {
                                   text: TextSpan(
                                     children: [
                                       TextSpan(
-                                        text: "${footerItem.text1}\n",
                                         style: TextStyle(
                                           color: kCaptionColor,
                                           height: 1.8,
                                         ),
                                       ),
                                       TextSpan(
-                                        text: "${footerItem.text2}\n",
                                         style: TextStyle(
                                           color: kCaptionColor,
                                         ),
@@ -167,10 +164,19 @@ Widget _buildUi(double width, BuildContext context) {
                             ),
                           ),
                         ),
-                      )
+                      ),
                     ],
                   )
                 ],
+              ),
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 8.0),
+                child: Text(
+                  "\n\n",
+                  style: TextStyle(
+                    color: kCaptionColor,
+                  ),
+                ),
               )
             ],
           );
@@ -178,4 +184,13 @@ Widget _buildUi(double width, BuildContext context) {
       ),
     ),
   );
+}
+
+_launchURLTwitter() async {
+  const url = 'https://twitter.com/NeftLabs';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
